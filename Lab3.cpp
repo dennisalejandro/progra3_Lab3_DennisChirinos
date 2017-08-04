@@ -167,28 +167,36 @@ void Shot(int Num) {
 int CheckBoatCountP1(int** Tabla) {
 	int Boats = 4;
 	if (Tabla[1][1] == -1) {
-	if (Tabla[1][2] == -1) {
-	if (Tabla[1][3] == -1) {
-	Boats--;
-	}}}
+		if (Tabla[1][2] == -1) {
+			if (Tabla[1][3] == -1) {
+				Boats--;
+			}
+		}
+	}
 
 	if (Tabla[3][1] == -1) {
-	if (Tabla[4][2] == -1) {
-	if (Tabla[5][3] == -1) {
-	Boats--;
-	}}}
+		if (Tabla[4][2] == -1) {
+			if (Tabla[5][3] == -1) {
+				Boats--;
+			}
+		}
+	}
 	
 	if (Tabla[7][1] == -1) {
-	if (Tabla[7][2] == -1) {
-	if (Tabla[7][3] == -1) {
-	Boats--;
-	}}}
+		if (Tabla[7][2] == -1) {
+			if (Tabla[7][3] == -1) {
+				Boats--;
+			}
+		}
+	}
 
 	if (Tabla[2][7] == -1) {
-	if (Tabla[3][7] == -1) {
-	if (Tabla[4][7] == -1) {
-	Boats--;
-	}}}
+		if (Tabla[3][7] == -1) {
+			if (Tabla[4][7] == -1) {
+				Boats--;
+			}
+		}
+	}
 	return Boats;
 }
 int CheckBoatCountP2(int** Tabla) {
