@@ -177,6 +177,7 @@ void Shot(int Num) {
 		cout << "Echese un whiskey" << "\n";
 	}
 }
+
 int CheckBoatCountP1(int** Tabla) {
 	int Boats = 4;
 	if (Tabla[1][1] == -1) {
@@ -212,6 +213,7 @@ int CheckBoatCountP1(int** Tabla) {
 	}
 	return Boats;
 }
+
 int CheckBoatCountP2(int** Tabla) {
 	int Boats = 4;
 	if (Tabla[0][1] == -1) {
