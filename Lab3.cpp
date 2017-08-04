@@ -194,36 +194,37 @@ int CheckBoatCountP1(int** Tabla) {
 int CheckBoatCountP2(int** Tabla) {
 	int Boats = 4;
 	if (Tabla[0][1] == -1) {
-	if (Tabla[0][2] == -1) {
-	if (Tabla[0][3] == -1) {
-	Boats--;
-	}}}
+		if (Tabla[0][2] == -1) {
+			if (Tabla[0][3] == -1) {
+				Boats--;
+			}
+		}
+	}
 
 	if (Tabla[5][1] == -1) {
-	if (Tabla[6][1] == -1) {
-	if (Tabla[7][1] == -1) {
-	Boats--;
-	}}}
+		if (Tabla[6][1] == -1) {
+			if (Tabla[7][1] == -1) {
+				Boats--;
+			}
+		}
+	}
 
 	if (Tabla[3][5] == -1) {
-	if (Tabla[3][6] == -1) {
-	if (Tabla[3][7] == -1) {
-	Boats--;
-	}}}
+		if (Tabla[3][6] == -1) {
+			if (Tabla[3][7] == -1) {
+				Boats--;
+			}
+		}
+	}
 
 	if (Tabla[4][4] == -1) {
-	if (Tabla[4][5] == -1) {
-	if (Tabla[4][6] == -1) {
-	Boats--;
-	}}}
+		if (Tabla[4][5] == -1) {
+			if (Tabla[4][6] == -1) {
+				Boats--;
+			}
+		}
+	}
 	
 	return Boats;
 }
-
-/*void println(int a) {
-	cout << a << "\n";
-}*/
-/*void println(string a) {
-	cout << a << "\n";
-}*/
 
