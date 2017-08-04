@@ -29,6 +29,12 @@ int main() {
 		int random;
 		cin >> x;
 		cin >> y;
+		if ((x >=8)||(y>=8)||(x<0)||(y<0)) {
+			cout << "Salio del mar, se le asigno (0,0) a su misil" << "\n";
+			y = 0;
+			x = 0;
+		}
+
 		if (MatrizP2[y][x] == 1) {
 			random = rand() % 7 + 1;
 			Shot(random);
@@ -45,10 +51,10 @@ int main() {
 		cout << "ingrese coordenada (x, y)" << "\n";
 		cin >> x;
 		cin >> y;
-		if ((x >=8)||(y>=8)||(x<1)||(y<1)) {
-		cout << "Salio del mar, se le asigno (0,0) a su misil" << "\n";
-		y = 0;
-		x = 0;
+		if ((x >=8)||(y>=8)||(x<0)||(y<0)) {
+			cout << "Salio del mar, se le asigno (0,0) a su misil" << "\n";
+			y = 0;
+			x = 0;
 		}
 		if (MatrizP1[y][x] == 2) {
 			random = rand() % 7 + 1;
