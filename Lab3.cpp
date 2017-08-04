@@ -12,13 +12,17 @@ void PrintMatrizRec(int**, int, int);
 int main() {
 	int** MatrizP1; 
 	int** MatrizP2;
+
 	MatrizP1 = CrearMatriz();
 	MatrizP2 = CrearMatriz2();
+
 	bool TerminoJuego = true;
+	
 	int ShotsP1;
 	ShotsP1 = 5;
 	int ShotsP2;
 	ShotsP2 = 5;
+	
 	int NumBoatsP1;
 	int NumBoatsP2;
 	while (TerminoJuego) {
