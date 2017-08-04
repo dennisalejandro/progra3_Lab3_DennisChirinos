@@ -105,7 +105,7 @@ int** CrearMatriz2() {
 
 	int** matriz2 = new int*[y];
         for(int i=0;i<x;i++){
-	                matriz2[i] = new int[y];
+		matriz2[i] = new int[y];
 	}
 	matriz2[0][1] = 2;
 	matriz2[0][2] = 2;
@@ -134,11 +134,11 @@ void PrintMatriz(int** Tabla) {
 }
 void PrintMatrizRec(int** Tabla, int x, int y) {
 	if (Tabla[y][x] == 0) {
-	cout << "^^";
+		cout << "^^";
 	} else if (Tabla[y][x] == -1) {
-	cout << "XX";
+		cout << "XX";
 	} else {
-	cout << "^^";
+		cout << "^^";
 	}
 	if ((x+1)<8) {
 		PrintMatrizRec(Tabla, x+1, y);
@@ -149,19 +149,19 @@ void PrintMatrizRec(int** Tabla, int x, int y) {
 }
 void Shot(int Num) {
 	if (Num == 1) {
-	cout << "Tomese un Cheap Tequila" << "\n";
+		cout << "Tomese un Cheap Tequila" << "\n";
 	} else if (Num == 2) {
-	cout << "Traguese un Jell-O" << "\n";
+		cout << "Traguese un Jell-O" << "\n";
 	} else if (Num == 3) {
-	cout << "Metase un Kamikaze" << "\n";
+		cout << "Metase un Kamikaze" << "\n";
 	} else if (Num == 4) {
-	cout << "No se le olvide su MindEraser" << "\n";
+		cout << "No se le olvide su MindEraser" << "\n";
 	} else if (Num == 5) {
-	cout << "Tomese unos Bombs" << "\n";
+		cout << "Tomese unos Bombs" << "\n";
 	} else if (Num == 6) {
-	cout << "Traguese unas Fireballs" << "\n";
+		cout << "Traguese unas Fireballs" << "\n";
 	} else if (Num == 7) {
-	cout << "Echese un whiskey" << "\n";
+		cout << "Echese un whiskey" << "\n";
 	}
 }
 int CheckBoatCountP1(int** Tabla) {
