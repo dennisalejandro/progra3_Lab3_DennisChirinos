@@ -39,7 +39,7 @@ int main() {
 			x = 0;
 		}
 
-		if (MatrizP2[y][x] == 1) {
+		if (MatrizP2[y][x] == 2) {
 			random = rand() % 7 + 1;
 			Shot(random);
 			MatrizP2[y][x] = -1;
@@ -47,8 +47,10 @@ int main() {
 			ShotsP2--;
 			cout << "Al jugador 2 le quedan " << ShotsP2 << " por tomar" << "\n";
 			cout << "y le quedan " << NumBoatsP2 << " Barcos" << "\n";
+		} else {
+			MatrizP2[y][x] = 9;
 		}
-		PrintMatrizRec(MatrizP2, 0, 0);
+		PrintMatrizRec(MatrizP2, 0 ,0);
 		cout << "\n";
 		
 		cout << "Jugador 2" << "\n";
@@ -60,7 +62,7 @@ int main() {
 			y = 0;
 			x = 0;
 		}
-		if (MatrizP1[y][x] == 2) {
+		if (MatrizP1[y][x] == 1) {
 			random = rand() % 7 + 1;
 			Shot(random);
 			MatrizP1[y][x] = -1;
@@ -68,6 +70,8 @@ int main() {
 			ShotsP1--;
 			cout << "Al jugador 2 le quedan " << ShotsP1 << " por tomar" << "\n";
 			cout << "y le quedan " << NumBoatsP1 << " Barcos" << "\n";
+		} else {
+			MatrizP1[y][x] = 9;
 		}
 		PrintMatrizRec(MatrizP1, 0, 0);
 		cout << "\n";
@@ -150,6 +154,8 @@ void PrintMatrizRec(int** Tabla, int x, int y) {
 		cout << "^^";
 	} else if (Tabla[y][x] == -1) {
 		cout << "XX";
+	} else if (Tabla[y][x] == 9) {
+		cout << "  ";
 	} else {
 		cout << "^^";
 	}
@@ -250,3 +256,33 @@ int CheckBoatCountP2(int** Tabla) {
 	
 	return Boats;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// :3 meow
