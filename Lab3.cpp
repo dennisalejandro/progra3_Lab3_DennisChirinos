@@ -4,8 +4,6 @@ using namespace std;
 int** CrearMatriz();
 int** CrearMatriz2();
 void PrintMatriz(int**);
-void println(int);
-void println(string);
 void Shot(int);
 int CheckBoatCountP1(int**);
 int CheckBoatCountP2(int**);
@@ -235,4 +233,3 @@ int CheckBoatCountP2(int** Tabla) {
 	
 	return Boats;
 }
-
