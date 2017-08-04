@@ -45,6 +45,11 @@ int main() {
 		cout << "ingrese coordenada (x, y)" << "\n";
 		cin >> x;
 		cin >> y;
+		if ((x >=8)||(y>=8)||(x<1)||(y<1)) {
+		cout << "Salio del mar, se le asigno (0,0) a su misil" << "\n";
+		y = 0;
+		x = 0;
+		}
 		if (MatrizP1[y][x] == 2) {
 			random = rand() % 7 + 1;
 			Shot(random);
@@ -151,7 +156,7 @@ void Shot(int Num) {
 	} else if (Num == 2) {
 		cout << "Traguese un Jell-O" << "\n";
 	} else if (Num == 3) {
-		cout << "Metase un Kamikaze" << "\n";
+		cout << "Los japoneses le regalan un Kamikaze" << "\n";
 	} else if (Num == 4) {
 		cout << "No se le olvide su MindEraser" << "\n";
 	} else if (Num == 5) {
