@@ -24,7 +24,7 @@ int main() {
 	int NumBoatsP1;
 	int NumBoatsP2;
 	while (TerminoJuego) {
-		cout << "Jugador 2" << "\n";
+		cout << "Jugador 1" << "\n";
 		cout << "ingrese coordenada (x, y)" << "\n";
 		int x;
 		int y;
